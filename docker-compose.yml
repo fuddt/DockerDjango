@@ -1,0 +1,11 @@
+version: '3'
+services:
+  django:
+    tty: true
+    build: ./
+    image: my_django:4
+    container_name: django
+    ports:
+     - 8000:8000
+    volumes:
+      - ./my_django:/usr/src/my_django

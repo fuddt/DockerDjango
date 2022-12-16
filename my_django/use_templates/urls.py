@@ -6,4 +6,5 @@ urlpatterns = [
     path('next_step', views.next_step, name='next_step'),
     path('next_step_second', views.next_step_second, name='next_step_second'),
     path('use_static', views.use_static, name='use_static'),
+    path('use_bootstrap', views.use_bootstrap, name='use_bootstrap')
 ]

@@ -25,6 +25,14 @@ def use_static(request):
     params_dict = {
 		'title' : 'templatesのstatic使いました。',
 		'msg'	: 'css記述するのめんどくさかったらBootstrap使ってね。',
-		'other_page':'next_step' 
+		'other_page':'use_bootstrap' 
 	}
     return render(request, 'use_templates/use_static.html', params_dict)
+
+def use_bootstrap(request):
+    params_dict = {
+		'title' : 'templatesのstatic使いました。',
+		'msg'	: 'css記述するのめんどくさかったらBootstrap使ってね。',
+		'other_page':'use_static' 
+	}
+    return render(request, 'use_templates/use_bootstrap.html', params_dict)

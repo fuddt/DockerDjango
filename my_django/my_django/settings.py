@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'use_templates',
     'form',
     'forms_class',
+    'use_db',
 ]
 
 MIDDLEWARE = [

@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class PokemonInfo(models.Model):
     trainers_name = models.CharField(max_length=8)
-    pokemon_name = models.CharField(max_length=6)
+    pokemons_name = models.CharField(max_length=6)
     pokemons_level = models.IntegerField(default=1)
     self_intro = models.CharField(max_length=150)
     

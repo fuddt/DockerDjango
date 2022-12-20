@@ -23,5 +23,5 @@ urlpatterns = [
     path('use_templates/', include('use_templates.urls')),
     path('form/', include('form.urls')),
     path('forms_class/', include('forms_class.urls')),
-    
+    path('use_db/', include('use_db.urls')),
 ]

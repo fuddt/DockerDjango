@@ -24,4 +24,5 @@ urlpatterns = [
     path('form/', include('form.urls')),
     path('forms_class/', include('forms_class.urls')),
     path('use_db/', include('use_db.urls')),
+    path('sns_test/', include('sns_test.urls'))
 ]

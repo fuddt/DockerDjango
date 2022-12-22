@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'form',
     'forms_class',
     'use_db',
+    'sns_test',
 ]
 
 MIDDLEWARE = [

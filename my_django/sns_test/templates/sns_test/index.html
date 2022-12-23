@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" 
+            href="{% static 'sns_test/css/bootstrap.min.css'%}"> 
+    <title>{{title}}</title>
+</head>
+
+<body>
+<main>
+<!-- 新規投稿
+    名前    メッセージ  送信ボタン -->
+
+    <h5>新規投稿</h5>
+    <table>
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+        <label for 'name'>
+            名前:{{form.name}}
+        </label>
+        <div>メッセージ:</div>
+        <label for 'message'>
+            {{form.message}}
+        </label>
+        <div >
+        <button type='submit' class="btn btn-primary" 
+                role="button" data-bs-toggle="button">送信</button>
+        </div>
+    </form>
+    </table>
+    <table>
+        <th>名前</th>
+        <th>メッセージ</th>
+        <th>投稿日</th>
+       {% for item in data%}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.message}}</td>
+            <td>{{item.datetime}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+<section>
+
+</section>
+
+</main>
+</body>
+</html>

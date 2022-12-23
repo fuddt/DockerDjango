@@ -1,0 +1,18 @@
+body {
+    color: rgb(209, 15, 15);
+    font-size: medium;
+}
+
+h1 {
+    color: burlywood;
+    font-size: 34pt;
+}
+
+p {
+    margin: 10px;
+}
+
+a{
+    color: red;
+    font-size: 12pt;
+}

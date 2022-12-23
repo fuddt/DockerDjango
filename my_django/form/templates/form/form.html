@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="form/css/bootstrap.css" />
+    </head>
+
+<body>
+    
+    <p class='text-primary'>{{title}}</h1>
+    <p class='text-warning'>{{msg}}</p>
+
+    <form action="{% url 'after_form' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="msg">message:</label>
+            <input id="msg" type="text" class="form-control" name="msg">
+        </div>
+        <input class="btn btn-primary" type="submit" value="click">
+    </form>
+    
+    <a href="{% url 'before_form' %}">戻る</a>
+</body>
+</html>
